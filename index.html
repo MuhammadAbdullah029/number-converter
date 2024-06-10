@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon/apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <title>Number Converter - Convert Binary, Decimal, Octal, Hexadecimal</title>
+    <meta name="description" content="A handy tool to convert numbers between binary, decimal, octal, and hexadecimal bases.">
+    <meta name="keywords" content="number converter, binary to decimal, decimal to binary, octal, hexadecimal, base conversion">
+</head>
+<body>
+    <main>
+    <header>
+        <h1>Number Converter</h1>
+    </header>
+    <section class="container">
+        <div class="converter">
+            <input type="text" id="inputNumber" placeholder="Enter a Number">
+            <select id="inputBase">
+                <option value="2">Binary</option>
+                <option value="10" selected>Decimal</option>
+                <option value="8">Octal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <button onclick="convertNumber()">Convert</button>
+            <button class="clear"">Clear</button>
+        </div>
+        
+        <div class="results">
+            <div>Binary: <span id="binaryResult"></span></div>
+            <div>Decimal: <span id="decimalResult"></span></div>
+            <div>Octal: <span id="octalResult"></span></div>
+            <div>Hexadecimal: <span id="hexResult"></span></div>
+        </div>
+    </section>
+</main>
+    <footer>
+    <p>&copy; 2024 Number Converter. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
